@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/harish/Desktop/project/Team internsip project/annex96_common_exercise_1/smart_city/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from doe_xstock.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
