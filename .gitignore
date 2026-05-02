@@ -200,5 +200,5 @@ outputs/
 ## Ignore workflows  ---
 .github/workflows/
 
-
+SERVER/wandb/
 
