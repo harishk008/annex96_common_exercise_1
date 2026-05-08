@@ -1,0 +1,73 @@
+{
+    "project": "Texas CityLearn ML Feature Dataset",
+    "input_files": {
+        "building_level": "/Users/harish/Desktop/project/Team-internship-project/annex96_common_exercise_1/harish_work/outputs/tx_real_baseline_building_features.csv",
+        "portfolio_level": "/Users/harish/Desktop/project/Team-internship-project/annex96_common_exercise_1/harish_work/outputs/tx_real_baseline_portfolio_features.csv"
+    },
+    "output_files": {
+        "building_ml_features": "/Users/harish/Desktop/project/Team-internship-project/annex96_common_exercise_1/harish_work/outputs/ml_datasets/tx_building_ml_features.csv",
+        "portfolio_ml_features": "/Users/harish/Desktop/project/Team-internship-project/annex96_common_exercise_1/harish_work/outputs/ml_datasets/tx_portfolio_ml_features.csv",
+        "readme": "/Users/harish/Desktop/project/Team-internship-project/annex96_common_exercise_1/harish_work/outputs/ml_datasets/README_feature_generation.txt"
+    },
+    "dataset_description": {
+        "building_level_rows": 54000,
+        "portfolio_level_rows": 2160,
+        "building_level_columns": 92,
+        "portfolio_level_columns": 108,
+        "time_step": "1 hour",
+        "evaluation_window": "First active district target period",
+        "number_of_buildings": 25
+    },
+    "feature_groups": {
+        "physical_features": [
+            "net_load",
+            "solar_gen",
+            "true_load",
+            "indoor_temp",
+            "outdoor_temp",
+            "cooling_setpoint"
+        ],
+        "controller_features": [
+            "battery_action",
+            "cooling_action",
+            "average_battery_action",
+            "average_cooling_action"
+        ],
+        "time_features": [
+            "hour",
+            "sin_hour",
+            "cos_hour",
+            "hour_of_day",
+            "is_solar_hour",
+            "is_evening_peak",
+            "is_night"
+        ],
+        "lag_features": "Features ending in _lag_1, _lag_2, _lag_3",
+        "ramp_features": "Features ending in _ramp",
+        "rolling_features": "Features containing rolling_mean or rolling_std",
+        "entropy_features": "Features containing entropy_24h",
+        "pca_features": [
+            "building_pca_1",
+            "building_pca_2",
+            "building_pca_3",
+            "portfolio_pca_1",
+            "portfolio_pca_2",
+            "portfolio_pca_3"
+        ],
+        "ica_features": [
+            "building_ica_1",
+            "building_ica_2",
+            "building_ica_3",
+            "portfolio_ica_1",
+            "portfolio_ica_2",
+            "portfolio_ica_3"
+        ]
+    },
+    "notes": [
+        "Original physical features are preserved.",
+        "PCA and ICA were computed on standardized selected numeric features.",
+        "Entropy was computed using a 24-hour rolling window.",
+        "Building-level tracking_error_proxy uses district_target divided equally across 25 buildings.",
+        "Portfolio-level tracking_error uses portfolio_net_load - district_target."
+    ]
+}
