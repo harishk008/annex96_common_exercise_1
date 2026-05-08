@@ -1,0 +1,5 @@
+Texas Real Baseline Metrics
+===========================
+Evaluation samples: 2160 hourly steps
+NMBE: -46.07 %
+CV-RMSE: 119.47 %
