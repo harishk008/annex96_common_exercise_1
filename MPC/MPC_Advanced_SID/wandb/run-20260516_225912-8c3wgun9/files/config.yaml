@@ -1,0 +1,69 @@
+_wandb:
+    value:
+        cli_version: 0.27.0
+        e:
+            sv4rs4kymp0s9mozgsl0iblgrjyqunam:
+                codePath: c:\Users\yusuf\Documents\Python_Projects\CITYLEARN - Q4\annex96_common_exercise_1\MPC\mpc2_decentralized1\mpc_advanced_sid_submission_fixed_logging.ipynb
+                codePathLocal: mpc_advanced_sid_submission_fixed_logging.ipynb
+                cpu_count: 8
+                cpu_count_logical: 16
+                cudaVersion: "12.5"
+                disk:
+                    /:
+                        total: "992610684928"
+                        used: "375882964992"
+                executable: c:\Users\yusuf\miniconda3\envs\citylearn_berkan\python.exe
+                git:
+                    commit: f4cb5dddf0c49399e2c22c3d30e9ca56aeda58f0
+                    remote: https://github.com/Harishk008/annex96_common_exercise_1.git
+                gpu: NVIDIA GeForce RTX 4070 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 4608
+                      memoryTotal: "8585740288"
+                      name: NVIDIA GeForce RTX 4070 Laptop GPU
+                      uuid: GPU-39e63477-aa3e-e25f-497f-75d9cab1c600
+                host: Berkan
+                memory:
+                    total: "33593020416"
+                os: Windows-10-10.0.26200-SP0
+                program: c:\Users\yusuf\Documents\Python_Projects\CITYLEARN - Q4\annex96_common_exercise_1\MPC\mpc2_decentralized1\mpc_advanced_sid_submission_fixed_logging.ipynb
+                python: CPython 3.10.20
+                root: c:\Users\yusuf\Documents\Python_Projects\CITYLEARN - Q4\annex96_common_exercise_1\MPC\mpc2_decentralized1
+                startedAt: "2026-05-16T20:59:12.785329Z"
+                writerId: sv4rs4kymp0s9mozgsl0iblgrjyqunam
+        m:
+            - "1": hour
+              "6":
+                - 3
+              "7": []
+            - "1": district_load
+              "5": 1
+              "6":
+                - 1
+                - 3
+              "7": []
+        python_version: 3.10.20
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+            "2":
+                - 1
+                - 5
+                - 53
+            "3":
+                - 2
+                - 7
+                - 13
+            "4": 3.10.20
+            "5": 0.27.0
+            "8":
+                - 1
+                - 3
+            "10":
+                - 20
+            "12": 0.27.0
+            "13": windows-amd64
